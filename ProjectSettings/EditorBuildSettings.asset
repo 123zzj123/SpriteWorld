@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/GameRes/Scene/Menu.unity
+    guid: dff0df4998d8c27498556ea3853a3c50
+  - enabled: 1
+    path: Assets/GameRes/Scene/BackGround1.unity
+    guid: 209a2e097b7d3454ab6cc7b72278c1e4
+  - enabled: 1
+    path: Assets/GameRes/Scene/BackGround2.unity
+    guid: dda88de208907944a860a012afb4e9f4
+  - enabled: 1
+    path: Assets/GameRes/Scene/Elf1.unity
+    guid: 2c884531768522744a9dbccae9c7878a
+  - enabled: 0
+    path: Assets/GameRes/Scene/Elf2.unity
+    guid: 1bf5b8b7603738446857e8f547164408
+  - enabled: 0
+    path: Assets/GameRes/Scene/Elf3.unity
+    guid: fd285be33151ef445bc1dccae6e24cbc
+  - enabled: 0
+    path: Assets/GameRes/Scene/Elf4.unity
+    guid: b77dc537ad1275b438cde60fd16974cb
+  - enabled: 0
+    path: Assets/GameRes/Scene/Elf5.unity
+    guid: 6a0dd80c7c4bb954e8e588ace787c52a
+  - enabled: 1
+    path: Assets/GameRes/Scene/Loading.unity
+    guid: 8a48af33ac57c8146bf401c6da2b2e77
+  - enabled: 1
+    path: Assets/GameRes/Scene/PetMenu.unity
+    guid: 90b7a6537b3400446ae1c5ecaa90a8c6
+  - enabled: 0
+    path: Assets/GameRes/Scene/Feed.unity
+    guid: 0636b362f33afd244a91e26ef9582b14
+  - enabled: 0
+    path: Assets/GameRes/Scene/NetRoom.unity
+    guid: 45083c91d75e5444384b3d5387c84f3f
+  - enabled: 0
+    path: Assets/GameRes/Scene/walk.unity
+    guid: a61987ddfea555a4ba0de0560712a173
