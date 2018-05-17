@@ -35,12 +35,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/GameRes/Scene/PetMenu.unity
     guid: 90b7a6537b3400446ae1c5ecaa90a8c6
-  - enabled: 0
+  - enabled: 1
     path: Assets/GameRes/Scene/Feed.unity
     guid: 0636b362f33afd244a91e26ef9582b14
-  - enabled: 0
+  - enabled: 1
     path: Assets/GameRes/Scene/NetRoom.unity
     guid: 45083c91d75e5444384b3d5387c84f3f
-  - enabled: 0
+  - enabled: 1
     path: Assets/GameRes/Scene/walk.unity
     guid: a61987ddfea555a4ba0de0560712a173
