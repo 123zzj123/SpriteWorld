@@ -15,7 +15,7 @@ public class MyObjectTrackHandler : DefaultTrackableEventHandler
     protected override void OnTrackingFound()
     {
         base.OnTrackingFound();
-
+        Debug.Log("found");
     }
 
     protected override void OnTrackingLost()
