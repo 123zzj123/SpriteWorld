@@ -11,8 +11,4 @@ public class Elf1Manager : MonoBehaviour
     {
         SceneManager.LoadScene("OfflineFightScene");
     }
-    public void LoadPetMenuScene()
-    {
-        SceneManager.LoadScene("PetMenu");
-    }
 }

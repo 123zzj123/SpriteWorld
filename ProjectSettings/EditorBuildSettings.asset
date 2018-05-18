@@ -44,3 +44,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/GameRes/Scene/walk.unity
     guid: a61987ddfea555a4ba0de0560712a173
+  - enabled: 1
+    path: Assets/GameRes/Scene/OfflineFightScene.unity
+    guid: 961b58293a0ac3d4bb32a9df9ce7992a

@@ -29,7 +29,7 @@ public class OfflineFightManager : MonoBehaviour {
     private bool ReadyForFight = false;
     private float Timers = 10.0f;
     private int CurrentSkill = -1;
-
+	private int originPerCount = SSDirector.Pet;
     private const int maxLifeValue = 3000;
     private const float PhysicalAttack = 500;
     private const float MagicAttack = 800;
@@ -104,7 +104,7 @@ public class OfflineFightManager : MonoBehaviour {
         {
             WinOrLossImage.sprite = SpriteWin;
             WinOrLossImage.gameObject.SetActive(true);
-            SSDirector.Pet++;
+            SSDirector.Pet = originPerCount + 1;
         }
     }
 

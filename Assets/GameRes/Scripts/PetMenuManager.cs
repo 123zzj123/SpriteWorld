@@ -36,6 +36,7 @@ public class PetMenuManager : MonoBehaviour {
     public void Search()
     {
         int index = SSDirector.Pet + 1;
+		Debug.Log(index);
         if (index <= 5)
         {
             var config = VuforiaConfiguration.Instance;
@@ -44,7 +45,9 @@ public class PetMenuManager : MonoBehaviour {
             dbConfig.DataSetsToLoad = dbConfig.DataSetsToActivate = new string[0];
             config.Vuforia.MaxSimultaneousImageTargets = 2;
 
-            dbConfig.DataSetsToLoad = dbConfig.DataSetsToActivate = new[] { "zzj_OT" };
+        //    dbConfig.DataSetsToLoad = dbConfig.DataSetsToActivate = new[] { "zzj_OT" };
+			
+            dbConfig.DataSetsToLoad = dbConfig.DataSetsToActivate = new[] { "zzj" };
             SceneManager.LoadScene("Elf" + index);
         }
     }
