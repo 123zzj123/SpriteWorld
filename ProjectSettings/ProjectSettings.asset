@@ -247,7 +247,7 @@ PlayerSettings:
   AndroidKeyaliasName: 
   AndroidTVCompatibility: 0
   AndroidIsGame: 1
-  AndroidEnableTango: 0
+  AndroidEnableTango: 1
   androidEnableBanner: 1
   androidUseLowAccuracyLocation: 0
   m_AndroidBanners:
@@ -662,9 +662,9 @@ PlayerSettings:
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: cd811a91-2842-46be-a2fc-855085e78d40
+  cloudProjectId: 5890410a-002d-4c80-8c11-69ea32d65f24
   projectName: ARTest
-  organizationId: zzj1
+  organizationId: zhangzekun
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0

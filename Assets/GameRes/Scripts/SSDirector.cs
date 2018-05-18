@@ -10,8 +10,8 @@ public class SSDirector : System.Object {
 
     #region Public Var
     public static int music = 0;
-    public static int Pet = 4;
-    public static int CurrentPet = 1;
+    public static int Pet = 0;
+    public static int CurrentPet = 0;
     #endregion
 
     #region Public Method

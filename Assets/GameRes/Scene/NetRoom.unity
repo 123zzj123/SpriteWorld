@@ -1451,14 +1451,14 @@ MonoBehaviour:
   RemoteSlider: {fileID: 748911107}
   LocalSlider: {fileID: 206524073}
   RemotePlayerText: {fileID: 266561389}
-  LocalPlayerText: {fileID: 0}
+  LocalPlayerText: {fileID: 2078120307}
   WinOrLossImage: {fileID: 1002544131}
   sprite:
-  - {fileID: 21300000, guid: 839408b58e9308842b3aab2fadd072b6, type: 3}
-  - {fileID: 21300000, guid: 839408b58e9308842b3aab2fadd072b6, type: 3}
-  - {fileID: 21300000, guid: 839408b58e9308842b3aab2fadd072b6, type: 3}
-  - {fileID: 21300000, guid: 839408b58e9308842b3aab2fadd072b6, type: 3}
-  - {fileID: 21300000, guid: 839408b58e9308842b3aab2fadd072b6, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   SpriteWin: {fileID: 21300000, guid: 04d3c0bff10e1ce4c90407356659150e, type: 3}
   SpriteLose: {fileID: 21300000, guid: e6a8a046a45420049a6e581f9dc7c4fc, type: 3}
   DisconnectedPanel: {fileID: 1549267093}
@@ -1484,7 +1484,7 @@ MonoBehaviour:
   ownershipTransfer: 0
   ObservedComponents:
   - {fileID: 0}
-  ObservedComponentsFoldoutOpen: 1
+  ObservedComponentsFoldoutOpen: 0
   viewIdField: 1
   instantiationId: 1
   currentMasterID: -1
