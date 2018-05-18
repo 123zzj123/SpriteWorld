@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
+    <ImageTarget name="shubiao" size="5.000000 3.223077" />
+    <ImageTarget name="migong" size="5.000000 5.780347" />
+    <ImageTarget name="heibanca" size="5.000000 3.792094" />
+    <ImageTarget name="laoshu" size="5.000000 6.606684" />
+    <ImageTarget name="shouji1" size="5.000000 6.649485" />
+    <ImageTarget name="suo" size="5.000000 3.859259" />
     <ImageTarget name="SYSU" size="0.140000 0.139775" />
   </Tracking>
 </QCARConfig>

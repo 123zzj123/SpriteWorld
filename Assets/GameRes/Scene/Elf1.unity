@@ -544,6 +544,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1475995378989358, guid: 6fba472006a76c547b5361d14b82d3c8, type: 2}
+      propertyPath: m_Name
+      value: shubiao1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6fba472006a76c547b5361d14b82d3c8, type: 2}
   m_IsPrefabParent: 0
@@ -842,7 +846,7 @@ Mesh:
     vertexCount: 4
     localAABB:
       m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0.5, y: 0, z: 0.4991964}
+      m_Extent: {x: 0.5, y: 0, z: 0.3223077}
   m_Shapes:
     vertices: []
     shapes: []
@@ -895,7 +899,7 @@ Mesh:
       format: 0
       dimension: 0
     m_DataSize: 128
-    _typelessdata: 000000bf00000000ac96ffbe000000000000803f000000000000000000000000000000bf00000000ac96ff3e000000000000803f00000000000000000000803f0000003f00000000ac96ffbe000000000000803f000000000000803f000000000000003f00000000ac96ff3e000000000000803f000000000000803f0000803f
+    _typelessdata: 000000bf000000008405a5be000000000000803f000000000000000000000000000000bf000000008405a53e000000000000803f00000000000000000000803f0000003f000000008405a5be000000000000803f000000000000803f000000000000003f000000008405a53e000000000000803f000000000000803f0000803f
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 0
@@ -955,13 +959,88 @@ Mesh:
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshOptimized: 0
+--- !u!1001 &1046833437
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1193866090}
+    m_Modifications:
+    - target: {fileID: 4901234158756548, guid: 6fba472006a76c547b5361d14b82d3c8, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 4901234158756548, guid: 6fba472006a76c547b5361d14b82d3c8, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 4901234158756548, guid: 6fba472006a76c547b5361d14b82d3c8, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 1.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 4901234158756548, guid: 6fba472006a76c547b5361d14b82d3c8, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0.33123142
+      objectReference: {fileID: 0}
+    - target: {fileID: 4901234158756548, guid: 6fba472006a76c547b5361d14b82d3c8, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.76539636
+      objectReference: {fileID: 0}
+    - target: {fileID: 4901234158756548, guid: 6fba472006a76c547b5361d14b82d3c8, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0.06580369
+      objectReference: {fileID: 0}
+    - target: {fileID: 4901234158756548, guid: 6fba472006a76c547b5361d14b82d3c8, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.5478358
+      objectReference: {fileID: 0}
+    - target: {fileID: 4901234158756548, guid: 6fba472006a76c547b5361d14b82d3c8, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4901234158756548, guid: 6fba472006a76c547b5361d14b82d3c8, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4901234158756548, guid: 6fba472006a76c547b5361d14b82d3c8, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4901234158756548, guid: 6fba472006a76c547b5361d14b82d3c8, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4901234158756548, guid: 6fba472006a76c547b5361d14b82d3c8, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -15.200001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4901234158756548, guid: 6fba472006a76c547b5361d14b82d3c8, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 113.908005
+      objectReference: {fileID: 0}
+    - target: {fileID: 4901234158756548, guid: 6fba472006a76c547b5361d14b82d3c8, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -36.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 1475995378989358, guid: 6fba472006a76c547b5361d14b82d3c8, type: 2}
+      propertyPath: m_Name
+      value: shubiao2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 6fba472006a76c547b5361d14b82d3c8, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1046833438 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4901234158756548, guid: 6fba472006a76c547b5361d14b82d3c8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1046833437}
 --- !u!21 &1080884861
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: SYSUMaterial
+  m_Name: shubiaoMaterial
   m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -974,7 +1053,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 22bc93b9440443b187aedba9670f50fc, type: 3}
+        m_Texture: {fileID: 2800000, guid: d447bf94e7464149b6f202e99a0862f8, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
@@ -1150,12 +1229,12 @@ MonoBehaviour:
   m_Script: {fileID: -1631628248, guid: bab6fa851cf5a1a4bba3cec5f191cb8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mTrackableName: SYSU
+  mTrackableName: shubiao
   mPreserveChildSize: 0
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/zzj.xml
   mExtendedTracking: 0
-  mAspectRatio: 0.9983928
+  mAspectRatio: 0.6446154
   mImageTargetType: 0
   mWidth: 5
   mHeight: 4.9919643
@@ -1171,6 +1250,7 @@ Transform:
   m_Children:
   - {fileID: 1984589365}
   - {fileID: 514323250}
+  - {fileID: 1046833438}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

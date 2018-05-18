@@ -8,6 +8,8 @@ public class PetMenuManager : MonoBehaviour {
 
     public GameObject[] Pets = new GameObject[5];
     public GameObject Null;
+    public GameObject ImportantProperty;
+    public GameObject NotImportantProperty;
     private int curretPet = -1;
 
 	void Start () {
@@ -19,6 +21,8 @@ public class PetMenuManager : MonoBehaviour {
         else
         {
             Null.SetActive(true);
+            ImportantProperty.SetActive(false);
+            NotImportantProperty.SetActive(false);
         }
 	}
 
@@ -26,6 +30,7 @@ public class PetMenuManager : MonoBehaviour {
     {
         Vuforia.CameraDevice.Instance.Stop();
         Vuforia.CameraDevice.Instance.Deinit();
+        Debug.Log(SSDirector.Pet);
     }
 
     public void Search()
@@ -107,6 +112,9 @@ public class PetMenuManager : MonoBehaviour {
     private void ShowPet(int ID)
     {
         Pets[ID-1].transform.position = new Vector3(0, 0, 8);
+        if (ID == 1) {
+            Pets[ID - 1].transform.position = new Vector3(-0.4f, -0.8f, 8.0f);
+        }
     }
 
     private void DonShowPet(int ID)

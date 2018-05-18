@@ -47,6 +47,7 @@ public class OfflineFightManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+     //   Debug.Log(SSDirector.Pet);
     }
 
 
@@ -81,6 +82,7 @@ public class OfflineFightManager : MonoBehaviour {
     {
         yield return new WaitForSeconds(0.5f);
         enemyAttack();
+        checkResult();
     }
     
     //敌方攻击
@@ -97,12 +99,12 @@ public class OfflineFightManager : MonoBehaviour {
         {
             WinOrLossImage.sprite = SpriteLose;
             WinOrLossImage.gameObject.SetActive(true);
-            SSDirector.Pet++;
         }
         else if (RemoteSlider.value <= 0)
         {
             WinOrLossImage.sprite = SpriteWin;
             WinOrLossImage.gameObject.SetActive(true);
+            SSDirector.Pet++;
         }
     }
 
