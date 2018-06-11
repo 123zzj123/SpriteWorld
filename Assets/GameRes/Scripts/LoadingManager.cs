@@ -1,14 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using UnityEngine;
 
 public class LoadingManager : MonoBehaviour {
 
     #region PRIVATE_MEMBER_VARIABLES
 
-    bool mChangeLevel = true;
-    RawImage mUISpinner;
+    private bool mChangeLevel = true;
+    private GameObject Spinner;
+    private AsyncOperation operation;
+    private float rotateSpeed;
+    private float angle;
 
     #endregion // PRIVATE_MEMBER_VARIABLES
 
@@ -17,33 +21,31 @@ public class LoadingManager : MonoBehaviour {
 
     void Start()
     {
-        mUISpinner = GetComponentInChildren<RawImage>();
-        Application.backgroundLoadingPriority = ThreadPriority.Low;
-        mChangeLevel = true;
-    }
-
-    void Update()
-    {
-        if (mUISpinner)
-            mUISpinner.rectTransform.Rotate(Vector3.forward, 90.0f * Time.deltaTime);
-
-        if (mChangeLevel)
-        {
-            LoadNextSceneAsync();
-            mChangeLevel = false;
-        }
+        rotateSpeed = 0.2f;
+        angle = 0;
+        Spinner = GameObject.Find("Spinner");
+        Debug.Log(Spinner);
+        StartCoroutine(AsyncLoading());
     }
 
     #endregion // MONOBEHAVIOUR_METHODS
 
 
     #region PRIVATE_METHODS
-
-    void LoadNextSceneAsync()
+    private void Update()
     {
-        string sceneName = "BackGround2";
+        Spinner.transform.Rotate(Vector3.back * (rotateSpeed * 15));
+    }
 
-        UnityEngine.SceneManagement.SceneManager.LoadSceneAsync(sceneName);
+    IEnumerator AsyncLoading()
+    {
+        operation = SceneManager.LoadSceneAsync("BackGround2");
+        //阻止当加载完成自动切换  
+        operation.allowSceneActivation = false;
+        yield return new WaitForSeconds(1/ rotateSpeed);
+
+        // 切换场景
+        operation.allowSceneActivation = true;
     }
 
     #endregion // PRIVATE_METHODS
