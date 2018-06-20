@@ -5325,8 +5325,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Pets:
   - {fileID: 607301371}
-  - {fileID: 1276990631}
   - {fileID: 32128454}
+  - {fileID: 1276990631}
   - {fileID: 815666813}
   - {fileID: 1405354785}
   Null: {fileID: 2112619164}

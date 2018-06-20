@@ -8,6 +8,6 @@ public class BG2Manager : MonoBehaviour {
 
     public void LoadNextScene()
     {
-        SceneManager.LoadScene("Elf1");
+        SceneManager.LoadScene("NewElf1");
     }
 }
