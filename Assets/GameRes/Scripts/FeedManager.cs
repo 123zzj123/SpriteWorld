@@ -18,6 +18,7 @@ public class FeedManager : MonoBehaviour {
     private float speed;
     private int curPet;
     private bool canFeed;
+    private bool timeOut;
     private Vector3 foodInitSpeed;
     private Vector3 startPos;
     private Vector3 endPos;
@@ -36,6 +37,7 @@ public class FeedManager : MonoBehaviour {
         canFeed = true;
         score = 0;
         totalTime = 60;
+        timeOut = false;
         ScoreText.GetComponent<Text>().text = "分数: " + score.ToString();
         TimeText.GetComponent<Text>().text = "时间: " + totalTime.ToString();
         originFoodPos = food.transform.position;
@@ -48,13 +50,13 @@ public class FeedManager : MonoBehaviour {
     void Update () {
         //检测宠物是否走到了目标位置，是则更换目的地。
         checkGetToTargetPosition();
-        if(Input.GetMouseButtonDown(0) && canFeed)
+        if(Input.GetMouseButtonDown(0) && canFeed && !timeOut)
         {
             canFeed = false;
             startPos = Input.mousePosition;
             Debug.Log("start: " + startPos);
         }
-        if (Input.GetMouseButtonUp(0))
+        if (Input.GetMouseButtonUp(0) && !timeOut)
         {
             endPos = Input.mousePosition;
             Debug.Log("end  " + endPos);
@@ -100,10 +102,12 @@ public class FeedManager : MonoBehaviour {
         }
         TimeText.GetComponent<Text>().text = "时间: 0";
         canFeed = false;
+        timeOut = true;
     }
 
     public void GoToPetMenu()
     {
+        Debug.Log("Go to petmenu");
         var config = VuforiaConfiguration.Instance;
         var dbConfig = config.DatabaseLoad;
 
