@@ -34,7 +34,7 @@ public class LoadingManager : MonoBehaviour {
     #region PRIVATE_METHODS
     private void Update()
     {
-        Spinner.transform.Rotate(Vector3.back * (rotateSpeed * 15));
+        Spinner.transform.Rotate(Vector3.back * (rotateSpeed * 10));
     }
 
     IEnumerator AsyncLoading()
