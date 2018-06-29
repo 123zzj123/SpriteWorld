@@ -14,12 +14,13 @@ public class MenuManager : MonoBehaviour {
     }
     public void ShowHelpMessage()
     {
-        //to do
+        SceneManager.LoadScene("Help");
     }
 
     public void ShowSettingPanel()
     {
         //to do
+        SceneManager.LoadScene("Set");
     }
 
     public void ReStartGame()
