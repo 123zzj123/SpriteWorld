@@ -48,7 +48,7 @@ public class PetMenuManager : MonoBehaviour {
         //    dbConfig.DataSetsToLoad = dbConfig.DataSetsToActivate = new[] { "zzj_OT" };
 			
             dbConfig.DataSetsToLoad = dbConfig.DataSetsToActivate = new[] { "zzj" };
-            SceneManager.LoadScene("Elf" + index);
+            SceneManager.LoadScene("NewElf" + index);
         }
     }
 
