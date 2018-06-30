@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class EnterGame : MonoBehaviour {
     [SerializeField]
     private GameObject enter;
+    [SerializeField]
+    private AudioClip music;
 
     private float alpha;
     private bool isAdd;
@@ -16,6 +18,8 @@ public class EnterGame : MonoBehaviour {
         isAdd = false;
         buttonIsAble = false;
         StartCoroutine(PlayBackground());
+        GameObject.Find("backgroundlayout").GetComponent<AudioSource>().loop = true;
+        GameObject.Find("backgroundlayout").GetComponent<AudioSource>().Play();
     }
 	
 	// Update is called once per frame

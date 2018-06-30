@@ -61,6 +61,13 @@ public class RpsCore : PunBehaviour, IPunTurnManagerCallbacks
     [SerializeField]
     private Text RemoteStatus;
 
+    [SerializeField]
+    private AudioClip win;
+
+    [SerializeField]
+    private AudioClip loss;
+
+
     private PunTurnManager turnManager;
 
     // keep track of when we show the results to handle game logic.
@@ -267,11 +274,15 @@ public class RpsCore : PunBehaviour, IPunTurnManagerCallbacks
         {
             WinOrLossImage.sprite = SpriteLose;
             WinOrLossImage.gameObject.SetActive(true);
+            GameObject.Find("GamePanel").GetComponent<AudioSource>().clip = loss;
+            GameObject.Find("GamePanel").GetComponent<AudioSource>().Play();
         }
         else if(remoteHp <= 0)
         {
             WinOrLossImage.sprite = SpriteWin;
             WinOrLossImage.gameObject.SetActive(true);
+            GameObject.Find("GamePanel").GetComponent<AudioSource>().clip = win;
+            GameObject.Find("GamePanel").GetComponent<AudioSource>().Play();
         }
     }
 

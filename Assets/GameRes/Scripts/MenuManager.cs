@@ -35,6 +35,7 @@ public class MenuManager : MonoBehaviour {
 
     public void Play()
     {
+        GameObject.Find("MainPanel").GetComponent<AudioSource>().Play();
         if (PlayerPrefs.HasKey(player_pet))
         {
             SSDirector.Pet = PlayerPrefs.GetInt(player_pet);
