@@ -1076,7 +1076,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 27479afa6b747314eb723d1048e51cff, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ac3216fa32d6ee146b1745557ccaf702, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1135,8 +1135,8 @@ MonoBehaviour:
   RemoteSlider: {fileID: 748911107}
   LocalSlider: {fileID: 206524073}
   WinOrLossImage: {fileID: 1002544131}
-  SpriteWin: {fileID: 21300000, guid: 04d3c0bff10e1ce4c90407356659150e, type: 3}
-  SpriteLose: {fileID: 21300000, guid: e6a8a046a45420049a6e581f9dc7c4fc, type: 3}
+  SpriteWin: {fileID: 21300000, guid: ac3ffb936183cda47a40f270af4ab600, type: 3}
+  SpriteLose: {fileID: 21300000, guid: 99609e7056b7fb54c9812c497658df0c, type: 3}
 --- !u!1 &711843099
 GameObject:
   m_ObjectHideFlags: 0
@@ -1425,7 +1425,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 04d3c0bff10e1ce4c90407356659150e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ac3ffb936183cda47a40f270af4ab600, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2014,7 +2014,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 27479afa6b747314eb723d1048e51cff, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 21c3fd707abe6bf40a69ba01afb35e14, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

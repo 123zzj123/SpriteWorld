@@ -47,3 +47,27 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/GameRes/Scene/OfflineFightScene.unity
     guid: 961b58293a0ac3d4bb32a9df9ce7992a
+  - enabled: 1
+    path: Assets/GameRes/Scene/Main.unity
+    guid: 4182de2e50c41e04b86ffd14e674a369
+  - enabled: 1
+    path: Assets/GameRes/Scene/NewElf1.unity
+    guid: 07f4b7e56500e4b4788cfca2c17da87b
+  - enabled: 1
+    path: Assets/GameRes/Scene/NewElf2.unity
+    guid: e02c44b789fcbb64c9dbd9f52917b066
+  - enabled: 1
+    path: Assets/GameRes/Scene/NewElf3.unity
+    guid: 679a4b2ba49e9804dbfd38beb114be73
+  - enabled: 1
+    path: Assets/GameRes/Scene/NewElf4.unity
+    guid: b81979c335d16444687e708a45410b7b
+  - enabled: 1
+    path: Assets/GameRes/Scene/NewElf5.unity
+    guid: a4df9d3358528d54794616342a2a0bf3
+  - enabled: 1
+    path: Assets/GameRes/Scene/Help.unity
+    guid: 7f7eaf2f16dcdf841ab96b0292835c26
+  - enabled: 1
+    path: Assets/GameRes/Scene/Set.unity
+    guid: 58e914807cf10a748bf7e8c5d48b7895
