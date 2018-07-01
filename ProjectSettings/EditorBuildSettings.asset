@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/GameRes/Scene/Main.unity
+    guid: 4182de2e50c41e04b86ffd14e674a369
+  - enabled: 1
     path: Assets/GameRes/Scene/Menu.unity
     guid: dff0df4998d8c27498556ea3853a3c50
   - enabled: 1
@@ -47,9 +50,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/GameRes/Scene/OfflineFightScene.unity
     guid: 961b58293a0ac3d4bb32a9df9ce7992a
-  - enabled: 1
-    path: Assets/GameRes/Scene/Main.unity
-    guid: 4182de2e50c41e04b86ffd14e674a369
   - enabled: 1
     path: Assets/GameRes/Scene/NewElf1.unity
     guid: 07f4b7e56500e4b4788cfca2c17da87b
