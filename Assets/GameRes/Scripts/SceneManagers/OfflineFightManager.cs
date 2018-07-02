@@ -55,7 +55,8 @@ public class OfflineFightManager : MonoBehaviour {
     //0-3 for 普通攻击/雷击/治疗术/横扫千军
     public void selectSkill(int index)
     {
-        switch(index)
+        StartCoroutine(AudioManager.PlayMenuAudio("GameUIView"));
+        switch (index)
         {
             case 0:
                 FightInfoText.text = "我方使用：\"" + skillName1 + "\"";
@@ -111,6 +112,6 @@ public class OfflineFightManager : MonoBehaviour {
     //返回petMenu
     public void goToPermenu()
     {
-        SceneManager.LoadScene("PetMenu");
+        StartCoroutine(AudioManager.LoadingNextScene("Canvas", "PetMenu"));
     }
 }

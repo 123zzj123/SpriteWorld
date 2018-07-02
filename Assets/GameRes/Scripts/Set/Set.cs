@@ -12,6 +12,6 @@ public class Set : MonoBehaviour {
 
     public void Return()
     {
-        SceneManager.LoadScene("Menu");
+        StartCoroutine(AudioManager.LoadingNextScene("backgroundlayout", "Menu"));
     }
 }

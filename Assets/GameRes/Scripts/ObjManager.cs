@@ -12,6 +12,6 @@ public class ObjManager : MonoBehaviour {
         var dbConfig = config.DatabaseLoad;
 
         dbConfig.DataSetsToLoad = dbConfig.DataSetsToActivate = new string[0];
-        SceneManager.LoadScene("PetMenu");
+        StartCoroutine(AudioManager.LoadingNextScene("Canvas", "PetMenu"));
     }
 }

@@ -293,6 +293,7 @@ public class RpsCore : PunBehaviour, IPunTurnManagerCallbacks
 
     public void SelectSkill(int skill)
     {
+        StartCoroutine(AudioManager.PlayMenuAudio("GameUIView"));
         this.MakeTurn(skill);
     }
 
@@ -306,7 +307,7 @@ public class RpsCore : PunBehaviour, IPunTurnManagerCallbacks
 
     public void ExitRoom()
     {
-        SceneManager.LoadScene("PetMenu");
+        StartCoroutine(AudioManager.LoadingNextScene("Canvas" ,"PetMenu"));
     }
 
     public IEnumerator LeaveTheRoom()

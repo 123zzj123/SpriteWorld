@@ -9,6 +9,6 @@ public class Elf1Manager : MonoBehaviour
 
     public void LoadFightScene()
     {
-        SceneManager.LoadScene("OfflineFightScene");
+        StartCoroutine(AudioManager.LoadingNextScene("Canvas", "OfflineFightScene"));
     }
 }

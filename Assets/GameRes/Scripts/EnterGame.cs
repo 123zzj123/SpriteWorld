@@ -18,8 +18,6 @@ public class EnterGame : MonoBehaviour {
         isAdd = false;
         buttonIsAble = false;
         StartCoroutine(PlayBackground());
-        GameObject.Find("backgroundlayout").GetComponent<AudioSource>().loop = true;
-        GameObject.Find("backgroundlayout").GetComponent<AudioSource>().Play();
     }
 	
 	// Update is called once per frame
@@ -56,6 +54,6 @@ public class EnterGame : MonoBehaviour {
     }
     public void Enter()
     {
-        SceneManager.LoadScene("Menu");
+        StartCoroutine(AudioManager.LoadingNextScene("Button", "Menu"));
     }
 }

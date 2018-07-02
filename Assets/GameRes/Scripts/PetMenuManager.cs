@@ -60,7 +60,8 @@ public class PetMenuManager : MonoBehaviour
     public void Search()
     {
         int index = SSDirector.Pet + 1;
-        Debug.Log(index);
+
+        StartCoroutine(AudioManager.LoadingNextScene("Canvas", "NewElf" + index));
         if (index <= 5)
         {
             var config = VuforiaConfiguration.Instance;
@@ -72,7 +73,6 @@ public class PetMenuManager : MonoBehaviour
             //    dbConfig.DataSetsToLoad = dbConfig.DataSetsToActivate = new[] { "zzj_OT" };
 
             dbConfig.DataSetsToLoad = dbConfig.DataSetsToActivate = new[] { "zzj" };
-            SceneManager.LoadScene("NewElf" + index);
         }
     }
 
@@ -80,7 +80,7 @@ public class PetMenuManager : MonoBehaviour
     {
         if (SSDirector.Pet != 0)
         {
-            SceneManager.LoadScene("NetRoom");
+            StartCoroutine(AudioManager.LoadingNextScene("Canvas", "NetRoom"));
         }
     }
 
@@ -88,7 +88,7 @@ public class PetMenuManager : MonoBehaviour
     {
         if (SSDirector.Pet != 0)
         {
-            SceneManager.LoadScene("Feed");
+            StartCoroutine(AudioManager.LoadingNextScene("Canvas", "Feed"));
         }
     }
 
@@ -104,7 +104,7 @@ public class PetMenuManager : MonoBehaviour
             config.Vuforia.MaxSimultaneousObjectTargets = 1;
 
             dbConfig.DataSetsToLoad = dbConfig.DataSetsToActivate = new[] { "zzj" };
-            SceneManager.LoadScene("Walk");
+            StartCoroutine(AudioManager.LoadingNextScene("Canvas", "Walk"));
         }
     }
 
@@ -170,6 +170,7 @@ public class PetMenuManager : MonoBehaviour
 
     public void ShowStory()
     {
+        StartCoroutine(AudioManager.PlayMenuAudio("Canvas"));
         Storys.SetActive(true);
         Bound.SetActive(false);
         Rebound.SetActive(true);
@@ -177,6 +178,7 @@ public class PetMenuManager : MonoBehaviour
     }
     public void HideStory()
     {
+        StartCoroutine(AudioManager.PlayMenuAudio("Canvas"));
         Storys.SetActive(false);
         Bound.SetActive(true);
         Rebound.SetActive(false);
@@ -197,10 +199,12 @@ public class PetMenuManager : MonoBehaviour
     public void NextLayout()
     {
         int count = Story[curretPet - 1].GetComponent<Transform>().childCount;
-        Debug.Log(count);
-        Debug.Log(curretPet);
-        if (currentLayout <= count)
+
+        StartCoroutine(AudioManager.PlayMenuAudio("Canvas"));
+        if (currentLayout < count)
         {
+            Debug.Log(count);
+            Debug.Log(currentLayout);
             Story[curretPet - 1].transform.Find("layout" + currentLayout.ToString()).gameObject.SetActive(false);
             currentLayout++;
             Story[curretPet - 1].transform.Find("layout" + currentLayout.ToString()).gameObject.SetActive(true);
@@ -209,7 +213,8 @@ public class PetMenuManager : MonoBehaviour
 
     public void LastLayout()
     {
-        if (currentLayout == 0)
+        StartCoroutine(AudioManager.PlayMenuAudio("Canvas"));
+        if (currentLayout == 1)
         {
             return;
         }

@@ -107,11 +107,10 @@ public class FeedManager : MonoBehaviour {
 
     public void GoToPetMenu()
     {
-        Debug.Log("Go to petmenu");
         var config = VuforiaConfiguration.Instance;
         var dbConfig = config.DatabaseLoad;
 
         dbConfig.DataSetsToLoad = dbConfig.DataSetsToActivate = new string[0];
-        SceneManager.LoadScene("PetMenu");
+        StartCoroutine(AudioManager.LoadingNextScene("Panel", "PetMenu"));
     }
 }

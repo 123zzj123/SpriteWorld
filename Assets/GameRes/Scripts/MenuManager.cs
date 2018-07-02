@@ -14,13 +14,13 @@ public class MenuManager : MonoBehaviour {
     }
     public void ShowHelpMessage()
     {
-        SceneManager.LoadScene("Help");
+        StartCoroutine(AudioManager.LoadingNextScene("MainPanel", "Help"));
     }
 
     public void ShowSettingPanel()
     {
         //to do
-        SceneManager.LoadScene("Set");
+        StartCoroutine(AudioManager.LoadingNextScene("MainPanel", "Set"));
     }
 
     public void ReStartGame()
@@ -35,23 +35,23 @@ public class MenuManager : MonoBehaviour {
 
     public void Play()
     {
-        GameObject.Find("MainPanel").GetComponent<AudioSource>().Play();
         if (PlayerPrefs.HasKey(player_pet))
         {
             SSDirector.Pet = PlayerPrefs.GetInt(player_pet);
         }
         if(SSDirector.Pet == 0)
         {
-            SceneManager.LoadScene("BackGround1");
+            StartCoroutine(AudioManager.LoadingNextScene("MainPanel", "BackGround1"));
         }
         else
         {
-            SceneManager.LoadScene("PetMenu");
+            StartCoroutine(AudioManager.LoadingNextScene("MainPanel", "PetMenu"));
         }
     }
 
     public void Exit()
     {
+        GameObject.Find("MainPanel").GetComponent<AudioSource>().Play();
         Application.Quit();
     }
 }

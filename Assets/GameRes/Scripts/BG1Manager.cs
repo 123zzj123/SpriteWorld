@@ -67,7 +67,6 @@ public class BG1Manager : MonoBehaviour {
             audio.Stop();
             Destroy(audio);
         }
-
         yield return new WaitForSeconds(time);
 
         // Set false for the panel

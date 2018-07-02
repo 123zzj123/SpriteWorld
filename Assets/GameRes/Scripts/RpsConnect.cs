@@ -17,6 +17,7 @@ public class RpsConnect : PunBehaviour
 
     public void ApplyUserIdAndConnect()
     {
+        GameObject.Find("Canvas").GetComponent<AudioSource>().Play();
         string nickName = "DemoNick";
         if (this.InputField != null && !string.IsNullOrEmpty(this.InputField.text))
         {
