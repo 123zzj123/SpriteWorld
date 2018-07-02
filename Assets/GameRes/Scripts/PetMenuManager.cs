@@ -41,12 +41,10 @@ public class PetMenuManager : MonoBehaviour
         {
             curretPet = SSDirector.CurrentPet;
             ShowPet(curretPet);
-            Property.SetActive(true);
         }
         else
         {
             Null.SetActive(true);
-            Property.SetActive(false);
         }
     }
 
